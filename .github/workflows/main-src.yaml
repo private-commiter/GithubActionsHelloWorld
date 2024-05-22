@@ -1,6 +1,11 @@
-name: CI
+name: CI for main branch and src subfolder
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'src/**'
 
 jobs:
   build:
